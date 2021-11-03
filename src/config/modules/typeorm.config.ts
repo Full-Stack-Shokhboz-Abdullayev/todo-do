@@ -18,7 +18,7 @@ export default {
 		return {
 			type: 'postgres',
 
-			host: context.getValue('POSTGRES_HOST'),
+			host: context.getValue('POSTGRES_HOST') || 'localhost',
 			port: parseInt(context.getValue('POSTGRES_PORT')),
 			username: context.getValue('POSTGRES_USER'),
 			password: context.getValue('POSTGRES_PASSWORD'),

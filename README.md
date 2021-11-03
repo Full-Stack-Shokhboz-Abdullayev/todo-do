@@ -1,5 +1,4 @@
-
-# Nest + Postgres Starter 
+# Nest + Postgres Starter
 
 <br>
 <br>
@@ -14,13 +13,14 @@
 
 ## Description
 
-__[Nest](https://github.com/nestjs/nest)__ framework __[TypeScript](https://www.typescriptlang.org/)__ starter repository. In addition, the starter contains connections to __[PostgreSQL](https://www.postgresql.org)__, __[TypeOrm](https://typeorm.io)__, __[Swagger](https://swagger.io)__ and _a special config pattern_.
+**[Nest](https://github.com/nestjs/nest)** framework **[TypeScript](https://www.typescriptlang.org/)** starter repository. In addition, the starter contains connections to **[PostgreSQL](https://www.postgresql.org)**, **[TypeOrm](https://typeorm.io)**, **[Swagger](https://swagger.io)** and _a special config pattern_.
 
 ## Get Started
 
 ```bash
 $ git clone https://github.com/Full-Stack-Shokhboz-Abdullayev/nestjs-postgres-starter.git
 ```
+
 or you can freely fork the repo.
 
 ## Running the Starter
@@ -60,13 +60,12 @@ $ npm run typeorm:migration:generate -- <your-migration-name>
 # run/apply migrations into DB
 $ npm run typeorm:migration:run
 ```
-Folders like _src/scripts_, _src/migrations_ are essential for auto migration.
 
+Folders like _src/scripts_, _src/migrations_ are essential for auto migration.
 
 ## Stay in touch.
 
 - Author: [Shokhboz Abdullaev](https://shox-pro.com)
-
 
 ## License
 
