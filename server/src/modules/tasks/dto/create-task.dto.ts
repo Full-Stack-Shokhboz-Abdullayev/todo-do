@@ -1,15 +1,13 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsBoolean, IsDateString, IsOptional, IsString } from 'class-validator';
 
-export class UpdateTaskDto {
+export class CreateTaskDto {
 	@ApiProperty()
 	@IsString()
-	@IsOptional()
 	title: string;
 
 	@ApiProperty({})
 	@IsString()
-	@IsOptional()
 	description: string;
 
 	@ApiProperty({ type: 'boolean' })
@@ -17,8 +15,12 @@ export class UpdateTaskDto {
 	@IsOptional()
 	completed: boolean;
 
-	@ApiProperty({ type: 'string', format: 'date-time' })
-	@IsDateString()
+	@ApiProperty({ type: 'boolean' })
+	@IsBoolean()
 	@IsOptional()
+	important: boolean;
+
+	@ApiProperty({ type: 'string', format: 'date' })
+	@IsDateString()
 	due_date: Date;
 }

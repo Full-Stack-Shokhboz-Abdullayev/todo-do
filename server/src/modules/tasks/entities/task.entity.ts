@@ -9,8 +9,11 @@ export class Task extends Base {
 	@Column({ type: 'varchar', nullable: true })
 	description: string;
 
-	@Column({ type: 'bool', nullable: true })
+	@Column({ type: 'bool', nullable: true, default: false })
 	completed: boolean;
+
+	@Column({ type: 'bool', nullable: true, default: false })
+	important: boolean;
 
 	@Column({ type: 'timestamptz', nullable: true })
 	due_date: Date;

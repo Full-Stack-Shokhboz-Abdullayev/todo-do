@@ -36,4 +36,5 @@ lerna-debug.log*
 /.env
 /ormconfig.json
 /postgres-data
-/src/migrations/*
+/server/src/migrations/*
+/server/node_modules
